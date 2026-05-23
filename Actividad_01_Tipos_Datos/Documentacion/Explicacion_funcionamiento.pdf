@@ -1,0 +1,11 @@
+1. Reserva espacio: Dependiendo del tipo, el compilador asigna un tamaño fijo (por ejemplo
+, 1 Byte para char, 4 bytes para int, 8 bytes para long long int, etcétera).
+2. Almacena Valor: Guarda el dato asignado en ese bloque de memoria recién reservada.
+3. Obtención de la ubicación(El operador &): Cuando escribes el nombre de la variable de forma normal
+(por ejemplo i), el programa accede al valor guardado. Al anteponer el operador "&", le estás
+indicando al programa que no quieres el valor, sino la dirección física de la memoria RAM(Número de casilla).
+4.Impresión en consola(printf).
+**El valor: Se sustituye en el primer especificador de formato correspondiente al tipo de
+dato.
+**La dirección(&): Se sustituye en el segundo especificador(%d), el cual transforma la dirección 
+de memoria en un número entero de base 10 legible para nosostros.

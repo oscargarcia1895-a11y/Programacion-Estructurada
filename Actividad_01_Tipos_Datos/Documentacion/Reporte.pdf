@@ -1,0 +1,16 @@
+El Lenguaje C destaca por permitir un acceso de bajo nivel a la memoria física del Hardware.
+Esta actividad aborda la gestión de variables locales del segmento Stack, diferenciando entre datos 
+primitivos y estructurales.
+
+El onjetivo es: Validar experimentalmente en bytes y el direccionamiento físico en memoria de variables primitivas en C.
+
+Primero se diseñó a mano un mapa de memoria predictivo en el cuaderno. Luego se codificó un programa fuente
+en C inicializando 13 variables primitivas (con tamaños de 1 a 8 Bytes) usando valores límite. Finalmente, mediante lafunción printf 
+y el operador unario &, se imprimieron los valores y las ubicaciones reales en la consola del sistema para corroborar la distribución
+física del hardware.
+
+Se comprobó de forma directa cómo las variables lógicas ocupan un espacio físico real y medible en la memoria RAM. La mayor dificultad
+técnica radicó en la correspondencia exacta de los especificadores de formato en la impresión para evitar desbordamientos visuales.
+
+Kerninghan, B., & Ritchie, D.(1988). El lenguaje de programación C. Prentice-Hall.
+Deitel, P., &Deitel, H.(2014). C cómo programar. Pearson Educación.
