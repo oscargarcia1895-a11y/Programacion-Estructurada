@@ -1,0 +1,19 @@
+Anaiza la implementación de la estructura de control de flujo condicional en el lenguaje
+C a través de seis programas. El Objetivo es evaluar de manera práctica cómo el compilador 
+toma decisiones lógicasm combinando operadores relacionales, aritméticos y conectores lógicos
+binarios.
+
+Bifurcaciones Dobles y Operador Residuo (Ejercicios 1, 2 y 3): Los primeros programas demuestran 
+el control de flujo básico (if-else). Mediante operadores relacionales (>= 18) y el operador de 
+residuo matemático (% 2), el sistema valida estados binarios excluyentes. Esto permite clasificar 
+de forma exacta si un usuario es mayor de edad o si un número entero es par o impar.
+Evaluación de Condiciones Múltiples (Ejercicios 4 y 5): Se analiza la conjunción AND (&&) y la disyunción 
+OR (||). En el caso de los números primos y el filtro de becas, el programa exige el cumplimiento simultáneo 
+de varios criterios de hardware (como evaluar que el promedio sea alto y las materias reprobadas sean cero). 
+El compilador evalúa las expresiones de izquierda a derecha aplicando cortocircuito lógico si una condición falla.
+Estructuras Condicionales Encadenadas (Ejercicio 6): El último programa implementa una estructura secuencial extendida 
+utilizando else if. Esta sintaxis permite evaluar una matriz de criterios jerárquicos (edad, promedio y materias) de 
+forma ordenada. Cuando una de las ramas resulta verdadera, el programa ejecuta el bloque correspondiente e ignora las opciones restantes, 
+optimizando los ciclos de procesamiento.
+
+Los códigos analizados demuestran que las estructuras condicionales constituyen el pilar fundamental para la toma de decisiones en el software

@@ -1,0 +1,10 @@
+**Programa 1 (Mayoría de edad): Compara la edad ingresada con el número 18 mediante un if-else para 
+decidir si la persona es mayor o menor de edad.
+**Programas 2 y 3 (Par o Impar): Dividen el número entre 2 y evalúan el residuo (% 2). Si el sobrante 
+es cero el número se imprime como par, de lo contrario se descarta como impar.
+**Programa 4 (Número primo): Emplea una combinación de conectores lógicos (&& y ||) para verificar de 
+forma simultánea si el número cumple las condiciones de división que definen a un número primo.
+**Programa 5 (Beca básica): Utiliza el operador && (Y) para obligar al sistema a verificar que el 
+aspirante cumpla dos condiciones obligatorias a la vez: promedio alto y cero materias reprobadas.
+**Programa 6 (Filtro avanzado): Usa una estructura encadenada (else if) para evaluar de forma jerárquica 
+y en orden diferentes escenarios del alumno (aprobar la beca, rechazar por minoría de edad o medir su nivel de riesgo académico).
