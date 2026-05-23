@@ -1,0 +1,15 @@
+Este código analiza el comportamiento lógico y sintáctico del lenguaje C a través de cinco
+ejercicios prácticos. El objetivo es validar experimentalmente las reglas del compilador 
+respecto a los operadores unarios, precidencia aritmética, el truncamiento de la división
+entera y la correcta delimitación de estructuras de control.
+
+**Operadores Unarios(Ejs. 1 y 3): Los prefijos(--b, ++i) modifican la variable inmediatamente antes 
+de evaluar la línea.
+**Jerarquía aritmética(Ej. 2): El compilador ejecuta la multiplicación antes que la suma 
+por prioridad estándar. El paréntesis altera ese orden de forma explícita.
+**Truncamiento de datos(Ej. 4): La división entre variables de tipo entero puro truncando decimales (2).
+**Estructuras condicionales(Ej. 5): Laas llaves son obligatorias para agrupar y ejecutar secyencialmente múltiples 
+instrucciones dentro de los bloques if o else.
+
+El compilador de C opera bajo reglas sintácticas estrictas donde la posición de los operadores
+o delimitación de bloques controlan directamente el flujo lógico.

@@ -1,0 +1,10 @@
+Ejercicio 1 y 3(Prefijo y Sufijos): Los prefijo modifican la variable antes de que
+la línea se ejecute. Los sufijos usa el valor que ya tienen en es instante y se incrementan después
+de pasar a la siguiente instrucción. Por eso printf("%d\n", i++) imprime 5 pero la siguiente línea ya recibe un
+6 y lo sube inmediatamente a 7.
+Ejercicio 2(Jerarquía de operaciones): Por regla matemáticala multiplicación se resuelve antes que 
+la suma. 
+Ejecicio 4(División entera): En Cn dividir dos números de tipo entero (5/2) siempore dará
+como resultado otro entero truncado(2). Guardarlo en float no recupera los decimales perdidos.
+Ejercicio 5(Uso de llaves {}): Si dejas un if o un else sin llaves, el compilador asumirá que la condición 
+solo afecta a la primera línea de código que se encuentre abajo.
