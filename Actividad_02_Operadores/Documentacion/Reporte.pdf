@@ -1,0 +1,16 @@
+El lenguaje en c evalúa las expresiones basándose en reglas estrictasde precedencia 
+y asociatividad. Los operadores unarios de incremento (++) y decremento (--) modifican los valores
+de las variables de forma inmediata si actuan como prefijo, o diferida si actúan como sufijo.
+Asimismo la Jerarquía de operaciones determinado la orden de ejcución de operaciones complejas  incluso 
+dentro de c.
+
+Objetivo: Analizar el comportamiento de los operadores unarios y las reglas de precedenci aritmética en c.
+
+Se prepararon dos bloques lógicos . En el primero, la instrucción c = a++ + --b; demostró
+que el pre-decremento reduce b antes de operar, mientras que el post-incremento usa el valor 
+actual de a para la suma y aumenta al finalizar la línea a 4. En el segundo bloque, se evaluaron
+x + y * 2 y (x + y) + 2 (El primero da 16 por prioridad multiplicativa y el segundo da 26
+porque los paréntesis fuerzan a realizar primero la suma).
+
+Se confirmó que la posición del operador unario cambia el momento de alteración de datos en memoria
+. De forma igual se valido que la jerarquía aritmética cambia la manera en la que se operan.

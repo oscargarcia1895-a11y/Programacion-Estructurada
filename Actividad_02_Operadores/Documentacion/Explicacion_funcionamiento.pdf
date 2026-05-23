@@ -1,0 +1,9 @@
+1. Operadores Prefijo y Sufijo: 
+**--b(Sufijo): Decrementa el valor de b antes de realizar la operación (b pasa de 4 a 3).
+**a++(Prefijo): Utilza el valor actual para calcular la suma y lo incrementa después de terminar 
+la línea(De 3 pasa a 4).
+**Resultado: c toma dos valores del momento (3+3), dando como resultado 6.
+
+2. Jerarquía de operaciones:
+**x + y * 2: El compilaor le da prioridad a la multiplicación, calculando primero 3*2 y luego sumando 10.
+**(x + y)*2: Los paréntesis rompen la prioridad estándar, forzando al programa a realizar primero la suma.
