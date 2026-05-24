@@ -1,0 +1,3 @@
+El programa pide seis números al usuario, filtra y guarda en un archivo de texto 
+únicamente los que son menores o iguales a 10 y que *no* son divisibles entre 2 ni 
+entre 3, reportando al final cuántos elementos pasaron la prueba.

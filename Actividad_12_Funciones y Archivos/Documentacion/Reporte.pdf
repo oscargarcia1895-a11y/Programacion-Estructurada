@@ -1,0 +1,26 @@
+Evaluar un programa modular en C diseñado para capturar un arreglo unidimensional de 
+6 elementos, filtrar sus componentes bajo tres condiciones aritméticas estrictas, 
+almacenar el resultado en un segundo vector y respaldar los datos en un archivo físico.
+
+Paso de Arreglos por Referencia: En la función main, las llamadas capturar(v, 6) y 
+filtrar(v, destino, 6) envían correctamente la dirección de memoria base de los 
+vectores. Esto permite modificar los elementos directamente en la pila (stack) sin duplicar 
+información.
+Algoritmo de Filtrado y Compactación (filtrar): La lógica central recorre el arreglo 
+original y evalúa cada elemento mediante tres condiciones simultáneas:
+No ser divisible entre 2 (origen[i] % 2 != 0).
+No ser divisible entre 3 (origen[i] % 3 != 0).
+Ser menor o igual a 10 (origen[i] <= 10).
+Uso de Índice Independiente: El programa utiliza una variable j = 0 como índice 
+exclusivo para el vector destino. Esto asegura que los elementos filtrados (como el 1, 5 o 7) 
+se almacenen de forma contigua y sin dejar celdas vacías o con "basura" entre ellos.
+
+El código abre el archivo resultado.txt en modo escritura ("w"). Esto significa que cada vez 
+que el programa se ejecute, el archivo se truncará (se borrará el contenido anterior) para 
+escribir el nuevo arreglo filtrado de forma lineal. Al finalizar el ciclo, invoca correctamente 
+fclose(f) para liberar el flujo de datos.
+
+El programa destaca por su excelente modularidad y la implementación limpia de un algoritmo de 
+empaquetado de datos. La separación de responsabilidades (captura, muestra y filtro) cumple con 
+las mejores prácticas de programación estructurada, garantizando un código eficiente y fácil de 
+mantener.
