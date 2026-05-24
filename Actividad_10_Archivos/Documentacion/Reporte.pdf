@@ -1,0 +1,18 @@
+Código 1 (Fundamentos de E/S de Archivos): Introduce el uso de flujos de almacenamiento 
+(FILE*) abriendo un archivo en modo escritura ("w") y lectura ("r"). Demuestra cómo plasmar 
+matrices estructuradas en texto plano y cómo emplear fgets combinado con strcmp para realizar 
+búsquedas secuenciales de cadenas específics dentro de un disco.
+Código 2 (Mapeo de Direcciones de Memoria):* Actúa como una herramienta de inspección física 
+en el stack. Al imprimir las direcciones de memoria de vectores de enteros, caracteres y 
+matrices, demuestra visualmente la contigüidad del hardware.
+Código 3 (Sistema Consolidado - Batalla Naval V3): Reúne toda la arquitectura de las 
+matrices bidimensionales de 5 \times 5 y el manejo de cadenas, añadiendo dos mejoras 
+críticas: el uso de system("cls") para limpiar la interfaz visual del flujo de consola y 
+la persistencia en archivo en modo añadir ("a")*. Al finalizar la partida, el programa escribe 
+el historial de los jugadores, el mapa de sus tableros finales y el veredicto del ganador en un 
+archivo log persistente (f.txt).
+
+La secuencia de estos programas demuestra la transición natural en el desarrollo de software: 
+las herramientas de bajo nivel (manejo de memoria y archivos de texto) se transforman en las 
+bases de infraestructura necesarias para añadir persistencia, seguridad y características 
+profesionales a un software dinámico interactivo.

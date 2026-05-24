@@ -1,0 +1,10 @@
+Código 1 (Archivos): Llena una matriz con caracteres de entorno (~, B, X)
+, la escribe dentro de un bloc de notas (tablero.txt) y después reabre ese 
+mismo archivo para buscar línea por línea si existe el nombre "Juanito".
+Código 2 (Memoria): Solicita nombres y números al usuario mientras imprime en la 
+consola las coordenadas físicas (direcciones de memoria) de la RAM donde el compilador 
+está acomodando cada variable y arreglo.
+Código 3 (Batalla Naval V3): Controla el flujo del juego en tableros de 5x5, usando 
+system("cls") para borrar la pantalla y evitar trampas entre turnos; al finalizar, abre 
+un archivo de registro (f.txt) en modo "añadir" ("a") para guardar permanentemente el 
+historial de la partida, los mapas y el ganador.
