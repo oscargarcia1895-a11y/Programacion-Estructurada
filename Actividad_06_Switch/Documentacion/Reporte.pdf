@@ -1,0 +1,22 @@
+Este informe analiza un programa interactivo en C que implementa un sistema de menús anidados utilizando
+control de ciclos (do-while) y estructuras de selección múltiple (switch-case). El objetivo es evaluar el 
+comportamiento del compilador ante la gestión de opciones por caracteres e impares, así como la transferencia de 
+flujo entre menús principales y submenús aritméticos.
+
+**Estructura Interactiva Base (do-while y switch principal):* El programa emplea un ciclo post-prueba controlado 
+por una variable de tipo carácter (opcionP). Este ciclo mantiene activa la interfaz principal en consola, derivando 
+el flujo hacia dos módulos operativos ('a' y 'b') o finalizando de forma inmediata mediante un retorno al sistema ('c').
+**Análisis de Paridad (Caso 'a'):* Aplica una bifurcación condicional simple basada en el operador de residuo (x % 2 == 0). 
+Permite clasificar de forma exacta si un número entero ingresado es par o impar, imprimiendo el veredicto directamente.
+**Módulo de Calculadora Anidada (Caso 'b'):* Al ingresar a esta rama, se solicita la captura de dos operandos enteros y se 
+despliega un submenú numérico controlado por un segundo switch (opcionC). Este submenú gestiona las cuatro operaciones 
+aritméticas fundamentales (suma, resta, multiplicación y división).
+**Consideraciones de Ejecución del Compilador:* * *División Entera:* Al operar con variables puramente de tipo int (r = x / y),
+el resultado de la división se trunca de forma automática, eliminando cualquier residuo decimal.
+**Control de Flujo Forzado:* En el bloque default del submenú, la instrucción return 0; rompe por completo la secuencia del 
+bucle externo, terminando el programa de manera abrupta ante una opción inválida en lugar de regresar al menú de bienvenida.
+
+El código analizado valida el uso de estructuras switch-case como una solución limpia y eficiente para la construcción de menús 
+frente a las cadenas extensas de if-else. Asimismo, demuestra la importancia de la consistencia en el diseño de flujos, 
+evidenciando cómo el anidamiento de estructuras requiere un control preciso de los retornos para no comprometer la experiencia 
+interactiva del usuario.

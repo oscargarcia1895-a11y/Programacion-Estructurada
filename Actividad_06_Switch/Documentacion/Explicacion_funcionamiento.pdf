@@ -1,0 +1,25 @@
+### 1. Interfaz Principal (do-while y switch de caracteres)
+Todo el sistema está gobernado por un bucle do-while que mantiene la aplicación abierta de forma 
+continua. Al inicio de cada iteración, el programa despliega un menú interactivo y lee una opción en 
+formato de texto (char). La estructura switch(opcionP) evalúa la letra ingresada:
+**'a': Desvía el flujo al analizador numérico.
+**'b': Abre el módulo de la calculadora.
+**'c': Imprime un mensaje de despedida y finaliza inmediatamente.
+2. Módulo de Paridad (Caso 'a')
+Cuando seleccionas esta opción, el programa solicita un número entero. Mediante una bifurcación condicional simple (if-else), 
+el compilador evalúa la operación aritmética x % 2 == 0 (residuo de la división entre 2). Si el sobrante es exactamente cero, 
+el sistema determina que el número es *par; si el residuo es diferente de cero, concluye que es **impar*.
+3. Calculadora Anidada (Caso 'b')
+Este bloque funciona como un submenú independiente dentro del programa. Su comportamiento sigue estos pasos:
+ **Captura de Datos:* Solicita y almacena dos números enteros en las variables x e y.
+ **Segundo Menú (switch numérico):* Muestra una lista de operaciones matemáticas y lee una variable numérica (opcionC). 
+ Un segundo switch procesa la opción:
+   **Casos 1 al 4:* Ejecutan la operación aritmética correspondiente (+, -, *, /) sobre los enteros guardados, guardan el 
+   resultado en r y lo muestran en pantalla.
+   **Nota del compilador:* Al calcular la división (Caso 4), dado que x e y son de tipo int, el programa realiza una división 
+   entera, eliminando automáticamente la parte decimal del resultado.
+### 4. Control de Salidas Directas
+A diferencia de los códigos convencionales donde los bloques solo se rompen con la instrucción break para continuar el bucle, 
+este programa implementa cierres definitivos mediante return 0;. Esto ocurre si seleccionas la opción *'c'* en el menú 
+principal o si digitas un número inválido en la calculadora (bloque default). En ambos escenarios, el programa se cierra 
+por completo de manera inmediata sin regresar al menú de bienvenida.
