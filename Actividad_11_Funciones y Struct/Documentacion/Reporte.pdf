@@ -1,0 +1,14 @@
+Este informe analiza de forma sintética dos programas en C enfocados en la organización 
+avanzada de datos. El objetivo es evaluar el comportamiento de funciones modulares aplicadas 
+a matrices bidimensionales con persistencia de archivos (Código 1) y el uso de estructuras 
+definidas por el usuario (struct) para la gestión de registros (Código 2).
+
+Código 1 (Modularidad y Álgebra de Matrices): Diseña tres funciones independientes para 
+manipular una matriz de 3 por 3. Realiza la captura de datos por consola (rellenar), el 
+volcado simultáneo en pantalla y disco (mostrar en modo "a"), y la suma aritmética de los 
+
+elementos de la diagonal principal mediante la validación condicional de índices (i == j).
+Código 2 (Registros mediante Estructuras): Introduce el concepto de tipos de datos compuestos 
+mediante struct alumne. Muestra la asignación y lectura de miembros (cadenas, flotantes y 
+enteros) usando el operador punto (.), aplicando la lógica tanto para un registro individual 
+(pepe) como para un arreglo secuencial de estructuras (grupo[3]).
