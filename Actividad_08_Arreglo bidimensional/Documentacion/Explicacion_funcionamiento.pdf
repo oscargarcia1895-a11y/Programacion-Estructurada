@@ -1,0 +1,24 @@
+El programa funciona como un juego por turnos de Batalla Naval en un tablero de 3x3 gestionado a través de cuatro etapas principales:
+
+Al arrancar, el juego limpia la memoria de ambos tableros llenando las matrices con ceros (0), lo que representa "agua". Posteriormente, 
+solicita a cada jugador ocultar dos piezas de forma secuencial:
+Un bote pequeño:* Ocupa 1 sola casilla.
+Un barco grande:* Ocupa 2 casillas contiguas.
+Cuando una pieza se coloca con éxito, el valor de esas celdas cambia de 0 a 1. El programa incluye un salto de líneas masivo para "limpiar" 
+la pantalla y evitar que el segundo jugador haga trampa viendo la estrategia del primero.
+
+La partida entra en un ciclo controlado de máximo 5 turnos. De manera alternada, el Jugador 1 ataca el tablero del Jugador 2 y viceversa, 
+introduciendo coordenadas de fila y columna. El programa cuenta con un filtro de acotamiento matemático para que, si el usuario introduce 
+una coordenada negativa o mayor a 2, el sistema la reajuste automáticamente dentro de los límites del tablero.
+
+Cada vez que un jugador lanza un ataque, el sistema evalúa el estado de la celda elegida en la matriz enemiga:
+Agua (0): Imprime que no hay ningún barco ahí.
+Ya impactado (-1):Advierte que esa zona ya estaba hundida.
+Impacto exitoso (1):Cambia el valor de la celda a -1. Si coincide con la posición guardada del bote pequeño, avisa
+que fue hundido; si toca al barco grande, evalúa si la casilla de al lado también tiene un -1 para determinar si sufrió 
+un daño parcial o si se hundió por completo.
+
+Después de cada disparo, la función Estado_Tablero recorre la matriz enemiga contando cuántas celdas tienen el valor de -1. 
+Dado que el bote aporta 1 casilla y el barco grande 2, el primer jugador que logre acumular *3 impactos* a favor destruye toda 
+la flota enemiga y rompe el ciclo ganando la partida. Si se agotan los 5 turnos sin que nadie llegue a 3, se declara un empate, 
+se muestran ambos tableros detallados y se pregunta a los usuarios si desean jugar otra ronda.

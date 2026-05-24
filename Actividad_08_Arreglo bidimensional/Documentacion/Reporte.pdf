@@ -1,0 +1,26 @@
+Reporte Técnico: Implementación del Juego "Batalla Naval" Mediante Matrices Bidimensionales en C
+
+El presente informe analiza un código fuente en C que implementa una versión simplificada y bidimensional
+del juego clásico "Batalla Naval" (Battleship) para dos jugadores. El objetivo es examinar cómo se gestiona 
+el estado del juego mediante matrices de 3 \times 3, evaluar las técnicas de validación de coordenadas (control 
+de desbordamiento) y analizar la transferencia de datos entre funciones utilizando arreglos por referencia.
+
+El programa divide sus responsabilidades en funciones modulares especializadas que manipulan la lógica del juego de la siguiente manera:
+| Función | Propósito Tecnológico | Mecanismo Clave |
+|---|---|---|
+| Crear_Tablero | Inicialización de memoria. | Llena la matriz con 0 (casillas vacías). |
+| Mostrar_Tablero | Renderizado en consola. | Bucles for anidados para imprimir el estado actual. |
+| Configurar_Tablero | Fase de despliegue inicial. | Captura la posición del bote e invoca la colocación del barco. |
+| Poner_Barco | Posicionamiento de piezas compuestas. | Asigna un barco de tamaño 2 en posiciones contiguas (origen y origen + 1). |
+| Atacar_Tablero | Modificación dinámica de estado. | Transforma las casillas impactadas (1) en destruidas (-1). |
+| Estado_Tablero | Evaluación de condición de fin de juego. | Cuenta las celdas con valor -1 para verificar si se alcanzó el límite de daño. |
+| Juego | Bucle principal del sistema (Game Loop). | Administra los turnos (máximo 5) y coordina las fases del juego. |
+
+Durante la revisión exhaustiva del código se identificaron mecánicas de diseño notables, así como un comportamiento 
+inconsistente en el acceso indexado que requiere atención:
+ * *Soporte de Caracteres UTF-8:* La inclusión de <windows.h> junto con la instrucción SetConsoleOutputCP(65001) en la función 
+ main es un excelente acierto técnico. Permite que la consola de Windows renderice correctamente caracteres con tildes y 
+ signos de exclamación invertidos (¡, Ó), evitando problemas de codificación.
+ * *Acotamiento Defensivo (*Clamping):* Para evitar desbordamientos de búfer (*buffer overflow) al ingresar coordenadas 
+ fuera de la matriz de 3 \times 3, el código implementa un filtro de conversión manual. Si el usuario introduce un número 
+ negativo, lo multiplica por -1, y si excede el límite del índice (2), lo fuerza a mantenerse en el rango permitido (X = 2).
