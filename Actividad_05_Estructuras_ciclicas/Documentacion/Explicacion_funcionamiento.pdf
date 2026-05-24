@@ -1,0 +1,22 @@
+1. Menú Interactivo (do-while externo)
+El programa principal está envuelto en un ciclo do-while que evalúa la variable opcion. Esto asegura 
+que el menú de selección (1. Cálculo de promedio, 2. Salir) se despliegue en pantalla al menos una 
+vez y continúe repitiéndose cíclicamente hasta que el usuario introduzca explícitamente el número 2 
+para finalizar la ejecución.
+2. Validación de la Cantidad de Materias (if)
+Cuando se selecciona la opción 1, el programa solicita el número de materias a evaluar (N). Mediante 
+la condición if(N > 0), el sistema valida que el dato sea un entero positivo; si el usuario ingresa 
+cero o un número negativo, el programa ejecuta el bloque else imprimiendo "Cantidad invalida" y aborta 
+el proceso, previniendo así un fallo crítico por división entre cero.
+3. Captura y Filtro de Calificaciones (for y do-while interno)
+Ciclo for: Si la cantidad de materias es válida, este bucle se ejecuta de forma determinada exactamente 
+N veces para controlar la lectura de cada nota.
+Filtro de entrada (do-while anidado): Dentro del for, este ciclo actúa como un escudo contra datos erróneos. 
+Captura la calificación y evalúa la condición if(cal < 0 || cal > 100). Si la nota está fuera de ese rango, el 
+programa congela el flujo, muestra el mensaje "Calificacion invalida." y obliga al usuario a repetir la captura 
+hasta que ingrese un valor correcto. Una vez validada, la nota se añade a la variable acumuladora suma.
+4. Cálculo y Determinación del Estado Final (if-else)
+Al concluir el ciclo de lectura, el programa divide el acumulado total entre el número de materias (promedio = suma / N) 
+y muestra el resultado con dos decimales (%.2f). Inmediatamente después, una estructura condicional evalúa el resultado: 
+si el promedio es igual o mayor a 60 despliega "Aprobado", de lo contrario muestra "Reprobado", limpiando la variable suma
+ para estar lista en caso de una nueva ejecución.

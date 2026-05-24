@@ -1,0 +1,23 @@
+El presente informe analiza la implementación de estructuras de control iterativas (do-while y for) en el
+lenguaje C. El objetivo es evaluar de manera práctica cómo el anidamiento de bucles permite construir menús 
+interactivos, controlar flujos cíclicos fijos y aplicar filtros defensivos para asegurar la validez de los 
+datos de entrada antes de realizar operaciones aritméticas.
+
+**Bucle de Control del Menú (do-while externo): El programa utiliza un ciclo de condición de salida post-prueba 
+para mantener la interfaz activa en la consola de comandos. Este bucle garantiza que las opciones del sistema 
+se muestren al menos una vez y continúen repitiéndose de forma indeterminada hasta que el usuario digite 
+explícitamente el valor de salida (opción 2). 
+**Validación de Rango Finito (if anidado): Tras seleccionar el 
+cálculo de promedio, el sistema solicita la cantidad de materias (N). Una bifurcación evalúa que este valor sea 
+estrictamente mayor a cero, actuando como una salvaguarda matemática para prevenir un error de ejecución por división 
+entre cero al calcular el promedio final. Ciclo con Contador Determinado (for): Cuando la cantidad de materias es 
+válida, se ejecuta un bucle controlado por un contador que inicia en 1 y se incrementa linealmente hasta alcanzar el 
+valor N. 
+**Esta estructura es ideal para procesos donde el número de iteraciones se conoce con exactitud desde el inicio 
+del bloque.Filtro Defensivo de Entrada (do-while interno): Dentro del ciclo de captura, se implementa un segundo 
+do-while encargado de la validación de datos. Este lazo atrapa el flujo del programa y obliga al usuario a reintroducir 
+la calificación si esta se encuentra fuera del rango permitido (menor a 0 o mayor a 100), protegiendo la integridad de 
+la suma acumulada.
+**Cálculo y Bifurcación de Estado: Al terminar las iteraciones, se calcula el promedio mediante la operación aritmética estándar 
+de división. Finalmente, una estructura if-else evalúa el resultado comparándolo con la constante de acreditación (60) para 
+imprimir el estado final de "Aprobado" o "Reprobado".
