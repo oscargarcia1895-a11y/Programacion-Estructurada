@@ -1,6 +1,7 @@
 Actividad: Switch
 
-Descripción:
+Descripción: El programa implementa un menú interactivo basado en estructuras switch que permite al usuario analizar la 
+paridad de un número o realizar operaciones aritméticas básicas mediante una calculadora.
 
 Temas aplicados:
 -Estructura condicional Switch
