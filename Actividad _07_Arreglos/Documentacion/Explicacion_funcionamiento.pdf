@@ -1,0 +1,18 @@
+Código 1: Exploración de la Memoria RAM
+Este programa no realiza cálculos; su única función es mostrar cómo el compilador acomoda las variables 
+físicamente en la memoria del equipo usando el operador de dirección &.
+El operador &: Al anteponerlo a una variable (como &temp1), le estás diciendo al programa que no imprima 
+su valor, sino la celda exacta de la memoria RAM donde está guardada.
+El secreto de los arreglos: El código demuestra que imprimir el nombre del arreglo a secas (temp) da exactamente 
+la misma dirección que el primer elemento del vector. En C, el nombre de un arreglo es un puntero oculto a su inicio.
+Bloques contiguos: Al ver las direcciones impresas de temp y temp[23], se nota que los elementos están pegados unos de 
+otros. Como cada float ocupa 4 bytes, el compilador reserva un bloque continuo de memoria para asegurarse de que el 
+acceso a los datos sea ultra rápido.
+Código 2: Captura y Lectura de Datos Indexados
+Este programa muestra el uso estándar de los vectores para almacenar información en serie (en este caso, 4 temperaturas) 
+utilizando ciclos controlados.
+Definición del tamaño (N = 4): El programa reserva espacio para 4 variables flotantes flotando dentro del arreglo temp.
+Primer ciclo for (Escritura): El contador i avanza desde 0 hasta 3. En cada vuelta, el scanf usa &temp[i] para depositar la 
+temperatura que teclea el usuario directamente en la celda correspondiente.
+Segundo ciclo for (Lectura): Una vez que el arreglo está lleno, el programa ejecuta un segundo ciclo idéntico. Esta vez, 
+entra a cada celda de forma secuencial, extrae el valor almacenado y lo imprime en la pantalla uno por uno.

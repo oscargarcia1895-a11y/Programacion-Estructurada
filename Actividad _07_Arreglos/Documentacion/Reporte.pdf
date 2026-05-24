@@ -1,0 +1,23 @@
+Este informe analiza dos programas en C enfocados en el manejo de arreglos unidimensionales (vectores) 
+y la asignación de memoria. El objetivo es evaluar de manera práctica cómo el compilador distribuye las 
+variables locales en la memoria (pila o stack), cómo se comportan las direcciones de los arreglos y la 
+metodología estándar para llenarlos y recorrerlos mediante ciclos indexados.
+
+Mapeo y Direccionamiento en la Pila (Código 1): Este programa expone visualmente la arquitectura de memoria del sistema 
+al imprimir las direcciones hexadecimales (representadas como enteros con %i) de diferentes variables.
+Se comprueba un concepto fundamental de C: el nombre de un arreglo (temp) equivale directamente a la dirección de memoria 
+de su primer elemento (&temp[0]).
+Al imprimir &temp[23], se puede calcular la naturaleza contigua de los arreglos; cada elemento de tipo float ocupa exactamente 
+4 bytes en memoria, por lo que la distancia entre el inicio del arreglo y la última posición es predecible y secuencial.
+Manipulación Secuencial de Vectores (Código 2): El segundo programa implementa un Arreglo de Longitud Variable (VLA, por sus 
+siglas en inglés) al definir el tamaño del vector temp mediante la variable int N = 4. El flujo de datos se gestiona en dos 
+etapas independientes:
+Ciclo de Lectura: Un bucle for controla el índice i desde 0 hasta N-1, utilizando la función scanf y el operador de dirección 
+&temp[i] para almacenar de forma ordenada cada temperatura en su celda correspondiente.
+Ciclo de Escritura: Un segundo bucle for idéntico recorre el arreglo ya poblado para extraer los valores de la memoria y 
+desplegarlos de manera lineal en la consola.
+
+El análisis conjunto de ambos códigos demuestra que los arreglos en C no son estructuras abstractas, sino bloques contiguos 
+de bytes físicos en la memoria del hardware. Comprender que el acceso a un índice (temp[i]) es en realidad un desplazamiento 
+directo en la dirección de memoria es indispensable para manipular vectores de forma eficiente y evitar desbordamientos de 
+memoria (buffer overflow).
