@@ -1,4 +1,4 @@
-Actividad: Batalla Naval con matrices bidimensionales
+Actividad: Batalla Naval con matrices bidimensionales.
 
 Descripción: El programa implementa un juego de Batalla Naval por turnos para dos jugadores, utilizando matrices de 3x3 para ocultar barcos, validar ataques coordinados y declarar un ganador.
 
