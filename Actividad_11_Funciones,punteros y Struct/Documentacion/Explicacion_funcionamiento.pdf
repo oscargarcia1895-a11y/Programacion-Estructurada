@@ -8,3 +8,5 @@ datos de diferentes tipos (como texto, enteros y flotantes) dentro de una sola v
 Primero solicita y muestra los datos escolares de un alumno individual (pepe) y, 
 posteriormente, utiliza ciclos for secuenciales para intentar capturar los nombres, edades 
 y promedios de un arreglo completo de 3 alumnos (grupo).
+Código 3(Uso de punteros): Este código introduce el concepto básico de la llamada de 
+parámetros por referencia en funciones.

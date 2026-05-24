@@ -7,8 +7,10 @@ Temas Aplicados:
 -Funciones
 -Arreglos
 -Struct
+-Punteros
 
 Compilación:
+-C:\Users\_\Desktop\Trabajos\Tipo>gcc Tipo.c -o Tipo.exe
 -C:\Users\_\Desktop\Trabajos\Tipo>gcc Tipo.c -o Tipo.exe
 -C:\Users\_\Desktop\Trabajos\Tipo>gcc Tipo.c -o Tipo.exe
 
@@ -41,3 +43,5 @@ Dame la edad: 18
 Dame el promedio: 90
 Dame el promedio: 90
 Dame el promedio: 90
+-C:\Users\_\Desktop\Trabajos\Tipo>Tipo.exe
+8
