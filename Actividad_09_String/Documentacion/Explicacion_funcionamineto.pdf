@@ -1,0 +1,7 @@
+Código 1 (Laboratorio de Cadenas): Funciona como una guía práctica para manipular texto, 
+demostrando cómo medir (strlen), copiar (strcpy), unir (strcat) y comparar (strcmp) 
+palabras en memoria de forma segura.
+Código 2 (Batalla Naval V2): Aplica esos conceptos de texto para dar identidad a un juego 
+de estrategia en un tablero de 5 \times 5, inyectando los nombres de los jugadores y los 
+tipos de naves (Fragata o Submarino) directamente en las funciones para personalizar los 
+turnos, los ataques y los reportes de impacto en tiempo real.

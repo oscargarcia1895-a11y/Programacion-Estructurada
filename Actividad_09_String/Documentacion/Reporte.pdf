@@ -1,0 +1,30 @@
+Este informe analiza de forma comparativa dos programas en C. El objetivo
+es evaluar la transición entre el aprendizaje fundamental de la librería 
+<string.h> (Código 1) y su posterior aplicación práctica en la optimización 
+de un sistema dinámico interactivo, como lo es un videojuego de lógica matricial 
+de 5 \times 5 (Código 2).
+
+Código 1 (Prácticas de Sintaxis con string.h): Es un programa de carácter didáctico 
+enfocado en el manejo seguro de arreglos de caracteres. Implementa operaciones críticas 
+de control de texto: fgets() para lecturas que evitan desbordamiento de memoria, 
+strlen() para conteo de longitud física, strcpy() para asignación estática, strcat() 
+para concatenación secuencial y strcmp() para la evaluación de equivalencia lógica entre 
+cadenas.
+Código 2 (Videojuego "Batalla Naval V2"): Representa una versión avanzada y modular del 
+juego clásico, escalado a una matriz de 5 \times 5 con un límite de 10 turnos. El valor 
+técnico principal radica en la inyección de cadenas como argumentos de funciones. 
+Utiliza los conceptos del Código 1 para capturar los nombres reales de los jugadores 
+y definir las identidades de las embarcaciones ("Fragata" y "Submarino"), sustituyendo 
+los mensajes estáticos por notificaciones personalizadas en tiempo real (ej. "Jugador 
+impactó un Submarino").
+
+Seguridad en Entrada de Datos: El paso de parámetros de cadenas en funciones como 
+Atacar_Tablero y Configurar_Tablero demuestra modularidad avanzada sin comprometer 
+punteros locales.
+Optimización Gráfica: A diferencia de las versiones previas, el motor de renderizado 
+(Mostrar_Tablero) discrimina visualmente entre casillas vacías [ ] e impactos exitosos [X], 
+mejorando la experiencia de usuario en consola.
+
+La comparativa evidencia cómo el dominio de las funciones de manipulación de texto en C permite 
+transformar un programa de lógica matemática rígida en una aplicación interactiva robusta, 
+personalizable y segura en el manejo de buffers de memoria.
